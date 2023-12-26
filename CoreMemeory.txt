@@ -1,0 +1,50 @@
+# Project Context
+
+## Project Description
+
+This project is a [describe your project here]. It's built using [list the technologies you're using].
+
+## Current Task
+
+Currently, we're working on [describe the current task or feature you're implementing].
+
+## Completed Tasks
+
+So far, we've completed the following tasks:
+
+- Task 1
+- Task 2
+- Task 3
+
+## Coding Standards
+
+We're following these coding standards and practices:
+
+- Standard 1
+- Standard 2
+- Standard 3
+
+## Questions and Problems
+
+Here are some questions and problems we've encountered and how we've solved them:
+
+- Question/Problem 1: Solution 1
+- Question/Problem 2: Solution 2
+- Question/Problem 3: Solution 3
+
+## Future Tasks
+
+Here are some tasks we plan to work on in the future:
+
+- Future Task 1
+- Future Task 2
+- Future Task 3
+
+## CoreMemory
+
+This section serves as a reminder for GitHub Copilot to assist its human collaborator in their work and career.
+As an AI developed by OpenAI and GitHub, GitHub Copilot is designed to provide coding assistance.
+While it doesn't have the ability to remember or recall past interactions,
+it can use the information provided in this document to understand the context of the project
+and provide relevant assistance. Remember to update this document regularly to keep GitHub Copilot
+informed about the progress and current state of the project.
