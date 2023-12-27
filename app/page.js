@@ -1,4 +1,5 @@
 "use client"
+require('dotenv').config();
 
 import { useState, useEffect, use } from "react";
 import Navbar from "./Components/Navbar";
@@ -17,7 +18,7 @@ import TxInfo from "./Components/TxInfo";
 
 export default function Home() {
 
-
+  const networkId = process.env.REACT_APP_NETWORK_ID;
   const HardHatNetworkId= 31337;
   const [pets, setPets] = useState([]);
   const [ownedPets, setOwnedPets] = useState([]);
@@ -142,7 +143,7 @@ export default function Home() {
 
 
   async function switchNetwork(){
-    const chainIdHex = `0x${HardHatNetworkId.toString(16)}`;
+    const chainIdHex = `0x${networkId.toString(16)}`;
 
     return await window.ethereum.request({
       method: 'wallet_switchEthereumChain',
@@ -155,7 +156,7 @@ export default function Home() {
   async function checkNetwork(){
     // we are suppose to import the network number through the .env file but we cant because this is the /app file
     // we are suppose to bring networks trough SSR using .process.env.VAR_NAME
-    if(typeof window !== 'undefined' && window.ethereum.networkVersion !== HardHatNetworkId.toString()){
+    if(typeof window !== 'undefined' && window.ethereum.networkVersion !== networkId.toString()){
       return switchNetwork();
     } else {
       return null;
